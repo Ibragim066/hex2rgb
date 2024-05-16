@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./ColorConventer.css";
+import "./ColorConverter.css";
 import { hexToRgb } from "../utils";
 
 const BASE_STATE = { message: "", color: "#fff" };
@@ -32,6 +32,7 @@ export const ColorConverter = () => {
           className="color-converter-input"
           onChange={(e) => setHexColor(e.target.value)}
           value={hexColor}
+          placeholder="#121212"
         />
         <label className="color-converter-label" htmlFor="color">
           {output.message}
